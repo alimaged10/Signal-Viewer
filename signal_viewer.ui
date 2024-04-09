@@ -1,0 +1,1607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignalViewer</class>
+ <widget class="QMainWindow" name="SignalViewer">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1244</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Signal Viewer App</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2" colspan="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>100</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="5">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1" colspan="6">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QWidget" name="viewer_widget" native="true">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>20000</width>
+            <height>20000</height>
+           </size>
+          </property>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>80</y>
+             <width>1197</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-weight : bold;font-size: 18pt
+</string>
+           </property>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>-6</y>
+              <width>251</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-weight : bold;font-size: 10pt</string>
+            </property>
+            <property name="text">
+             <string>  Channel 1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>629</x>
+              <y>-16</y>
+              <width>151</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font-weight : bold;font-size: 10pt
+
+</string>
+            </property>
+            <property name="text">
+             <string>  Channel 2</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QWidget" name="wholewidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>19</width>
+          <height>60</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <property name="spacing">
+          <number>50</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widgetleft" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>60</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="playBtn1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-play-50.png</normaloff>icons/icons8-play-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>P, 1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pauseBtn1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-pause-50.png</normaloff>icons/icons8-pause-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>1, P</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_out_btn1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-out-64.png</normaloff>icons/icons8-zoom-out-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>1, Z</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_in_btn1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-in-64.png</normaloff>icons/icons8-zoom-in-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Z, 1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="slowdownBtn1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-rewind-26.png</normaloff>icons/icons8-rewind-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>1, -</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SpeedUp1">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-fast-forward-26.png</normaloff>icons/icons8-fast-forward-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>1, =</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="rewind_btn1">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-replay-50.png</normaloff>icons/icons8-replay-50.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>R, 1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="snapshot_1">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-screenshot-30.png</normaloff>icons/icons8-screenshot-30.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>R, 1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_5" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QPushButton" name="playBtn3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-play-50.png</normaloff>icons/icons8-play-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>P, 3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pauseBtn3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-pause-50.png</normaloff>icons/icons8-pause-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>3, P</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_out_btn3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-out-64.png</normaloff>icons/icons8-zoom-out-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>3, Z</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_in_btn3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-in-64.png</normaloff>icons/icons8-zoom-in-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Z, 3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="slowdownBtn3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-rewind-26.png</normaloff>icons/icons8-rewind-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>3, -</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SpeedUp3">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-fast-forward-26.png</normaloff>icons/icons8-fast-forward-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>3, =</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="rewind_btn3">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-replay-50.png</normaloff>icons/icons8-replay-50.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>R, 3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="snapshot_3">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-screenshot-30.png</normaloff>icons/icons8-screenshot-30.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>R, 1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widgetright" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>60</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="playBtn2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-play-50.png</normaloff>icons/icons8-play-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>P, 2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pauseBtn2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-pause-50.png</normaloff>icons/icons8-pause-50.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>2, P</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_out_btn2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-out-64.png</normaloff>icons/icons8-zoom-out-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>2, Z</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="zoom_in_btn2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-zoom-in-64.png</normaloff>icons/icons8-zoom-in-64.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>Z, 2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="slowdownBtn2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-rewind-26.png</normaloff>icons/icons8-rewind-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>2, -</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="SpeedUp2">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-fast-forward-26.png</normaloff>icons/icons8-fast-forward-26.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>2, =</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="rewind_btn2">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-replay-50.png</normaloff>icons/icons8-replay-50.png</iconset>
+              </property>
+              <property name="shortcut">
+               <string>R, 2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="snapshot_2">
+              <property name="maximumSize">
+               <size>
+                <width>500</width>
+                <height>50</height>
+               </size>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>icons/icons8-screenshot-30.png</normaloff>icons/icons8-screenshot-30.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="shortcut">
+               <string>R, 1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+        <zorder>widgetright</zorder>
+        <zorder>widget_5</zorder>
+        <zorder>widgetleft</zorder>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="Linkbutton">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}
+
+QPushButton:hover {
+    background-color: #005CA3; 
+}
+QPushButton svg {
+    fill: rgb(255, 255, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>icons/icons8-link-64.png</normaloff>icons/icons8-link-64.png</iconset>
+      </property>
+      <property name="shortcut">
+       <string>Ctrl+L</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0" rowspan="3">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>1000</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>       Channel_1        </string>
+      </property>
+      <widget class="QComboBox" name="channel_1_combobox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="channel_1_color_label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>49</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Color:</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="channel_1_hide_checkbox">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>75</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="shortcut">
+        <string>H, 1</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="channel_1_hide_label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Show:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="channel_1_edit_label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="adjust_color_channel1_button">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>60</y>
+         <width>31</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #ffffff; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="shortcut">
+        <string>A, 1</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="channel_1_edit_line_edit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>160</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="cursorPosition">
+        <number>0</number>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="channel_1_edit_confirm">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>190</y>
+         <width>93</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 5px;
+	border-radius:5px;
+
+    
+}</string>
+       </property>
+       <property name="text">
+        <string>Apply</string>
+       </property>
+       <property name="shortcut">
+        <string>C, 1</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>290</y>
+         <width>161</width>
+         <height>381</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>1000</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>       Channel_2</string>
+       </property>
+       <widget class="QLabel" name="channel_2_edit_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>150</y>
+          <width>111</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="channel_2_hide_checkbox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>110</y>
+          <width>75</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="shortcut">
+         <string>H, 2</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="adjust_color_channel2_button">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>70</y>
+          <width>31</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #ffffff; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 10px;
+	border-radius:5px;
+
+    
+}</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="shortcut">
+         <string>A, 2</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="channel_2_combobox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>121</width>
+          <height>21</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="channel_2_color_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>49</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Color:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="channel_2_edit_line_edit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="channel_2_hide_label">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>41</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Show:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="channel_2_edit_confirm">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>200</y>
+          <width>93</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 5px;
+	border-radius:5px;
+
+    
+}</string>
+        </property>
+        <property name="text">
+         <string>Apply</string>
+        </property>
+        <property name="shortcut">
+         <string>C, 2</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="move_to_channel2_button">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>240</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 5px;
+	border-radius:5px;
+
+    
+}</string>
+       </property>
+       <property name="text">
+        <string>Move To Channel 2</string>
+       </property>
+       <property name="shortcut">
+        <string>M, 2</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="move_to_channel1_button">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>540</y>
+         <width>121</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #007ACC; /* Button background color */
+    color :rgb(255, 255, 255);
+    padding: 5px;
+	border-radius:5px;
+
+    
+}</string>
+       </property>
+       <property name="text">
+        <string>Move To Channel 1</string>
+       </property>
+       <property name="shortcut">
+        <string>M, 1</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1244</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuadd_signal">
+     <property name="title">
+      <string>Add Signal</string>
+     </property>
+     <addaction name="add_signal_channel1_button"/>
+     <addaction name="add_signal_channel2_button"/>
+    </widget>
+    <addaction name="menuadd_signal"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuexport">
+    <property name="title">
+     <string>Export</string>
+    </property>
+    <addaction name="export_channel1_btn"/>
+    <addaction name="export_channel2_btn"/>
+    <addaction name="export_channel12_btn"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuexport"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionexit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="add_signal_channel1_button">
+   <property name="text">
+    <string>Channel 1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="add_signal_channel2_button">
+   <property name="text">
+    <string>Channel 2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="export_channel1_btn">
+   <property name="text">
+    <string>Channel 1</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E, Ctrl+1</string>
+   </property>
+  </action>
+  <action name="export_channel2_btn">
+   <property name="text">
+    <string>Channel 2</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E, Ctrl+2</string>
+   </property>
+  </action>
+  <action name="export_channel12_btn">
+   <property name="text">
+    <string>Both Channels</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E, Ctrl+3</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
