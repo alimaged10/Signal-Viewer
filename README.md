@@ -35,15 +35,23 @@ The Multi-Channel Signal Viewer is a user-friendly desktop application that allo
 2. **Adjust Signal Attributes:** The application provides a Channel Edit window on the left side of the main window. Users can adjust the following attributes:
    - **Change Color:** Customize the color of a signal.
 
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/3f4a1c01-db23-47ed-92bf-891bb88a7bdd)
 
 
    - **Edit Signal's Name:** Rename signals for easy identification.
 
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/a04fe434-5439-4ecd-93a8-d7872ca5cf8f)
 
 
    - **Hide Signal:** Toggle visibility using a checkbox.
-   - 
+
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/10188339-6347-4638-bf6c-57af0ff23760)
+
+
    - **Move Signal:** Transfer a signal from one channel to another.
+
+     ![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/4f921dfe-2426-49c2-b0d8-4896916a5b71)
+
    
    To make these changes, select your signal name from the dropdown menu, adjust your settings, and press "Confirm Edits."
 
@@ -53,6 +61,7 @@ The Multi-Channel Signal Viewer is a user-friendly desktop application that allo
    - **Zoom In/Out:** Zoom in or out to focus on specific sections of the signal.
    - **Speed Up/Speed Down:** Adjust the speed at which the signal is displayed.
    - **Pause/Play:** Control the playback of individual signals.
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/53849bb6-f668-4f44-8663-ad2476628ca6)
 
 ### Rewinding Signals
 
