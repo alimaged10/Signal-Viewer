@@ -22,6 +22,7 @@ The Multi-Channel Signal Viewer is a user-friendly desktop application that allo
 ### Uploading Signals
 
 1. **Upload Multiple Signals Per Channel:** You can upload more than one signal per channel. To do this, navigate to the menu bar, choose "File," then select "Add Signal." Choose the channel you want to plot in. (Note: All signals are uploaded in dynamic phase.)
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/fb46a4a5-042f-41e6-af82-547bb3f49f97)
 
 ### Signal Attributes Adjustment
 
