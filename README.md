@@ -80,3 +80,12 @@ The Multi-Channel Signal Viewer is a user-friendly desktop application that allo
 
 
 This Multi-Channel Signal Viewer is a powerful tool for professionals who need to visualize and manipulate multiple signal channels effectively. It offers a range of features to enhance the user experience and provide valuable insights from the data. Enjoy using this application for your signal monitoring and analysis needs!
+
+## Contributers
+
+1. Ali Maged
+2. Mina Adel
+3. Mariem Magdy
+4. Mariam Hany
+
+Under the supervision of Dr.Tamer Basha, SBME 2025
