@@ -22,14 +22,27 @@ The Multi-Channel Signal Viewer is a user-friendly desktop application that allo
 ### Uploading Signals
 
 1. **Upload Multiple Signals Per Channel:** You can upload more than one signal per channel. To do this, navigate to the menu bar, choose "File," then select "Add Signal." Choose the channel you want to plot in. (Note: All signals are uploaded in dynamic phase.)
-![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/fb46a4a5-042f-41e6-af82-547bb3f49f97)
+   
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/72ed81c3-34fa-46e5-9c92-6b72b4d642cc)
+
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/349d443f-b0ad-4739-9c75-6f341a311470)
+
+![image](https://github.com/alimaged10/Signal-Viewer/assets/115377600/868b283f-ba07-4cf8-9d2b-c5ee22f2a53a)
+
 
 ### Signal Attributes Adjustment
 
 2. **Adjust Signal Attributes:** The application provides a Channel Edit window on the left side of the main window. Users can adjust the following attributes:
    - **Change Color:** Customize the color of a signal.
+
+
+
    - **Edit Signal's Name:** Rename signals for easy identification.
+
+
+
    - **Hide Signal:** Toggle visibility using a checkbox.
+   - 
    - **Move Signal:** Transfer a signal from one channel to another.
    
    To make these changes, select your signal name from the dropdown menu, adjust your settings, and press "Confirm Edits."
